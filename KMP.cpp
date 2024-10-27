@@ -1,5 +1,5 @@
 #include"KMP.H"
-// ¼ÆËãnextÊý×é
+// ÅºÄ†Ã‹ÄƒnextÄ˜Ã½Ã—Ã©
 void Next(SqString t, int next[]) {
     int j = 0, k = -1;
     next[0] = -1;
@@ -13,8 +13,8 @@ void Next(SqString t, int next[]) {
         }
     }
 }
-
-// KMPµÄÆ¥Åä
+//123
+// KMPÄ¾Ã„Ä†Ä½Ä¹Ã¤
 bool KMP(SqString s, SqString t) {
     int next[MaxSize], i = 0, j = 0;
     Next(t, next);
