@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1730024598 source:d:\documents\c”Ô—‘\codeblocks\shujujiegou\kmp\kmp\main.cpp
+	<stdio.h>
+	<string.h>
+	<stdbool.h>
+	"KMP.h"
+
+1730024458 source:d:\documents\c”Ô—‘\codeblocks\shujujiegou\kmp\kmp\kmp.cpp
+	"KMP.H"
+
+1730024379 d:\documents\c”Ô—‘\codeblocks\shujujiegou\kmp\kmp\kmp.h
+	<stdbool.h>
+
