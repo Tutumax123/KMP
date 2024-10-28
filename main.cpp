@@ -12,32 +12,32 @@ SqString convertToSqString(char* str) {
     strcpy(s.data, str);
     return s;
 }
-
+//123
 int main() {
     char setPassword[MaxSize];
     char input[MaxSize];
     int attempts = 3;
 
-    printf("ÇëÉè¶¨ÃÜÂë: ");
+    printf("è¯·è®¾å®šå¯†ç : ");
     scanf("%s", setPassword);
 
     SqString password = convertToSqString(setPassword);
 
     while (attempts > 0) {
-        printf("ÇëÊäÈëÃÜÂë: ");
+        printf("è¯·è¾“å…¥å¯†ç : ");
         scanf("%s", input);
 
         SqString inputString = convertToSqString(input);
 
         if (KMP(inputString,password)) {
-            printf("¿ªËø³É¹¦£¡\n");
+            printf("å¼€é”æˆåŠŸï¼\n");
             return 0;
         } else {
-            printf("¿ªËøÊ§°Ü£¬Çë¼ÌĞøÊäÈë¡£\n");
+            printf("å¼€é”å¤±è´¥ï¼Œè¯·ç»§ç»­è¾“å…¥ã€‚\n");
             attempts--;
         }
     }
 
-    printf("ÎŞ·¨¿ªËø\n");
+    printf("æ— æ³•å¼€é”\n");
     return 0;
 }
