@@ -1,5 +1,6 @@
 #include"KMP.H"
 // źĆËănextĘý×é
+//
 void Next(SqString t, int next[]) {
     int j = 0, k = -1;
     next[0] = -1;
