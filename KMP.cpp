@@ -1,6 +1,6 @@
 #include"KMP.H"
 // źĆËănextĘý×é
-//
+//模式串求next数组
 void Next(SqString t, int next[]) {
     int j = 0, k = -1;
     next[0] = -1;
@@ -16,6 +16,7 @@ void Next(SqString t, int next[]) {
 }
 //123
 // KMPľÄĆĽĹä
+//kmp算法
 bool KMP(SqString s, SqString t) {
     int next[MaxSize], i = 0, j = 0;
     Next(t, next);
